@@ -44,14 +44,13 @@
       font-variant: normal;
       text-transform: none;
     }
-    .titulo::before {
+    .titulo::after {
       content: "";
-      position: absolute;
-      width: 30px;
+      display: block;
+      width: 40px;
       height: 3px;
       background-color: #05ce29;
-      top: 305px;
-      right: 20px;
+      margin: 8px auto 0;
     }
 
     .Boton {
@@ -157,9 +156,9 @@
       width: 300px;
       margin: 0 auto;
     }
-    .bar4 input {
+    .bar4 textarea {
       border: none;
-      height: auto;
+      height: 150px;
       width: 100%;
       border-radius: 0;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -177,7 +176,7 @@
   </style>
   <div class="container">
     <div class="contact-box">
-      <img src="bg.jpg" alt="description" width="480" height="510" />
+      <img src="bg.jpg" alt="description" width="500" height="510" />
       <div>
         <div class="box">
           <h1 class="titulo">Contact us</h1>
@@ -195,7 +194,7 @@
         </form>
         <br />
         <form class="bar4">
-          <input type="text" placeholder="  Message" />
+          <textarea type="text" placeholder="  Message"></textarea>
         </form>
         <br />
         <button class="Boton">Send</button>
